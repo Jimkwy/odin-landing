@@ -1,0 +1,194 @@
+html, body {
+    background-color: cadetblue;
+    font-family: 'Roboto', arial;
+    margin: 0;
+    padding: 0;
+    background-color: #cccccc;
+}
+
+/* nav stuff */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    padding: 0px 11% 0px 10%;
+    z-index: 2;
+    color: white;
+}
+
+.navbar .navlinks {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.navbar li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0;
+  height: 100%;
+}
+
+.navbar li:hover {
+    cursor: pointer;
+    background-color: rgba(196, 196, 196, 0.233);
+}
+
+/* main bilboard stuff */
+
+.main-box {
+    display: flex;
+    color: #F9FAF8;
+    background-image: url("stha964l.png");
+    background-color: #1F2937;
+    background-size:100% 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 4% 9% 4% 9%;
+    height: 100vh;
+}
+
+.main-box .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20%;
+    margin: 0;
+    padding: 5%;
+    height: 40%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 10px;
+}
+
+.main-box .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-weight: 400;
+  
+  margin: 0;
+}
+
+.main-box .img-box{
+    display: block;
+}
+
+.main-box .img-box img {
+    max-width: auto;
+    max-height: 350px;
+    min-height: 150;
+}
+
+/* mid-box content stuff */
+
+.mid-box {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-box .title {
+    display:block;
+    flex: 1;
+
+}
+
+.mid-box .row{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 2% 10%;
+    gap: 10%;
+
+}
+
+.mid-box .row-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.mid-box .row-box img {
+    max-width: 200px;
+    height: auto;
+    min-height: 100px;
+}
+
+/* quote and follow box */
+.quote-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 10%;
+    height: 40vh;
+    background-image: url("cpu.jpg");
+    background-color: #1F2937;
+}
+
+.quote {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow:column;
+    gap: 20%;
+    margin: 0;
+    padding: 2%;
+    height: 80%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 10px;
+    color: white;
+}
+
+.quote i {
+    font-size: 150%;
+}
+
+.quote p {
+    font-size:150%;
+    text-align: right;
+}
+
+/* footer stuff */
+.footer {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 2% 10%;
+    background-color: rgba(40, 40, 40);
+    
+}
+
+.footer p {
+    color: rgb(168, 168, 168);
+    margin: 0;
+    padding: 0;
+    font-size: smaller;
+}
+.footer footer {
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+}
