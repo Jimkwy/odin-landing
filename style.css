@@ -4,6 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #cccccc;
+    color: rgb(241, 241, 241);
 }
 
 /* nav stuff */
@@ -15,12 +16,11 @@ html, body {
     top: 0px;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.40);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    padding: 0px 11% 0px 10%;
+    background-color: rgba(0, 0, 0, 0.60);
+    padding: 0px 8% 0px 10%;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     z-index: 2;
-    color: white;
 }
 
 .navbar .navlinks {
@@ -41,6 +41,7 @@ html, body {
   font-weight: 400;
   margin: 0;
   height: 100%;
+  font-weight: bold;
 }
 
 .navbar li:hover {
@@ -53,12 +54,12 @@ html, body {
 .main-box {
     display: flex;
     color: #F9FAF8;
-    background-image: url("stha964l.png");
+    background-image: url("./img/city.jpg");
     background-color: #1F2937;
-    background-size:100% 100%;
+    background-size:100%;
     align-items: center;
     justify-content: center;
-    padding: 4% 9% 4% 9%;
+    padding: 4% 10% 4% 10%;
     height: 100vh;
 }
 
@@ -71,7 +72,7 @@ html, body {
     padding: 5%;
     height: 40%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.60);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     border-radius: 10px;
@@ -87,6 +88,10 @@ html, body {
   margin: 0;
 }
 
+.main-box .info p {
+    font-size: large;
+}
+
 .main-box .img-box{
     display: block;
 }
@@ -95,21 +100,22 @@ html, body {
     max-width: auto;
     max-height: 350px;
     min-height: 150;
+    border-radius: 10px;
 }
 
 /* mid-box content stuff */
 
-.mid-box {
+.mid-box {  
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    background: rgb(181,23,158);
+    background: linear-gradient(180deg, rgba(108,12,94,1) 0%, rgba(181,23,158,1) 15%, rgba(72,12,168,1) 50%, rgba(72,149,239,1) 85%, rgba(35,69,108,1) 100%);}
 
 .mid-box .title {
     display:block;
     flex: 1;
-
 }
 
 .mid-box .row{
@@ -125,27 +131,30 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.60);
+    border-radius: 10px;
 }
 
 .mid-box .row-box img {
     max-width: 200px;
     height: auto;
     min-height: 100px;
+    border-radius: 10px;
 }
 
 /* quote and follow box */
-.quote-box {
+.award-box {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2% 10%;
-    height: 40vh;
-    background-image: url("cpu.jpg");
+    background-image: url("./img/cpu.jpg");
     background-color: #1F2937;
+    background-size: 100%;
 }
 
-.quote {
+.award-box .content {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -153,23 +162,35 @@ html, body {
     gap: 20%;
     margin: 0;
     padding: 2%;
-    height: 80%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.60);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     border-radius: 10px;
-    color: white;
 }
 
-.quote i {
-    font-size: 150%;
+.award-box .row {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 2% 10%;
+    gap: 20%;
 }
 
-.quote p {
-    font-size:150%;
-    text-align: right;
+.award-box .row-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
 }
+
+.award-box .row-box img {
+    max-width: 200px;
+    height: auto;
+    min-height: 100px;
+    border-radius: 10px;   
+}
+
 
 /* footer stuff */
 .footer {
@@ -187,7 +208,6 @@ html, body {
     font-size: smaller;
 }
 .footer footer {
-    color: whitesmoke;
     margin: 0;
     padding: 0;
     align-self: center;
